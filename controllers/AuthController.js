@@ -30,7 +30,7 @@ const register = async (req, res) => {
   try {
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    const { error } = await supabase.from("users").insert([
+    const { error } = await supabase.from("profiles").insert([
       {
         username: username,
         password: hashedPassword,
@@ -52,7 +52,7 @@ const login = async (req, res) => {
   const { username, password } = req.body;
 
   const { data: user, error } = await supabase
-    .from("users")
+    .from("profiles")
     .select("*")
     .eq("username", username)
     .single();
