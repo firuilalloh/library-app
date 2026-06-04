@@ -21,7 +21,7 @@ app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/auth", authRouter);
 app.use("/api", loansRouter);
-sapp.use("/api", booksRouter);
+app.use("/api", booksRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
