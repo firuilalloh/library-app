@@ -1,7 +1,0 @@
-folder ini berisi semua logika bisnis seperti logika create, read, delete, update
-jadi misal kalian ingin membuat logika bisnis untuk menambah buku:
-- buat file baru bernama BookControllers.js
-- kemudian buat logika create dalam file tersebut
-- dan jangan lupa untuk import beberapa library seperti
-    const supabase = require("../config/supabase")
-- dan seterus nya fungsi logika controller nya seperti : GetAllBook, updaetBook, dsb
